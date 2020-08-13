@@ -1,3 +1,7 @@
+require 'net/http'
+
+
+
 class GetRequester
   
   def initialize
