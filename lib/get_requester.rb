@@ -18,7 +18,7 @@ class GetRequester
   def parse_json
     url = JSON.parse(self.get_response_body)
     url.collect do |url|
-      url [""]
+      url [":name, :occupation"]
     end
   end
   
