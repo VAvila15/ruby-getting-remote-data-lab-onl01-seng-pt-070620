@@ -15,11 +15,9 @@ class GetRequester
     response.body
   end
   
-  def parse_json
-    url = JSON.parse(self.get_response_body)
-    url.collect do |url|
-      url [" "]
-    end
-  end
+ def parse_json
+  results = JSON.parse(self.get_response_body)
+  results     
+ end 
   
 end
